@@ -1,17 +1,5 @@
 name: build-x86-64-immortalwrt-25.12.x
-# 👇 加上这一段
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-on:
-  push:
-  pull_request:
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4  # 这个版本是对的
 on:
   workflow_dispatch:
     inputs:
